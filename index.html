@@ -140,8 +140,8 @@
 
       #forgotPassword {
         position: absolute;
-        right: 0;
-        top: 71%;
+
+        top: 107%;
         color: #8c7042 !important;
         text-decoration: none !important;
         font-size: 12px;
@@ -204,6 +204,7 @@
       .rememberMe {
         text-align: start;
         margin-bottom: 2rem;
+        font-size: 12px;
       }
 
       div:has(#next) {
@@ -213,8 +214,18 @@
       #next {
         width: 100%;
         color: white;
+        padding: 12px 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1234px;
       }
 
+      .divider {
+        display: none;
+      }
+      #createAccount {
+        color: #8c7042 !important;
+      }
       /* /////////////////////////////////////////////////////// */
 
       .background-container {
@@ -229,6 +240,30 @@
           color: rgb(211, 3, 3);
         }
       }
+
+      .entry-item label {
+        display: none !important;
+      }
+      .heading,
+      .intro {
+        display: none;
+      }
+      /* ////////////////////////////////////////////////////////////////////// */
+
+      .carousel-indicators {
+        bottom: -29%;
+      }
+      .carousel-indicators [data-bs-target] {
+        width: 1.5625rem;
+        height: 0.375rem;
+        background-color: #068fd3;
+      }
+      .carousel-indicators .active {
+        width: 3rem;
+        height: 0.375rem;
+      }
+
+      /* /////////////////////////////////////////////////////////////////////// */
 
       @media (max-width: 1000px) {
         .main-login > div {
