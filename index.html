@@ -392,5 +392,40 @@
         </form>
       </section>
     </main>
+
+    <!-- scripts -->
+
+    <!-- <script src="https://alcdn.msauth.net/lib/1.0.0/js/msal.js"></script>
+    <script>
+      // Required to initialize the page for Azure B2C
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof PageLoaded === "function") {
+          PageLoaded();
+        }
+      });
+    </script> -->
+
+    <script src="https://alcdn.msauth.net/lib/1.0.0/js/msal.js"></script>
+    <script type="text/javascript">
+      if (document.body.classList.contains("signup")) {
+        console.log("User is on the Sign up form");
+        // نفذي أي أكواد خاصة بالـ Sign up
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginForm = document.querySelector("form");
+        loginForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          // Send values to Azure via callback
+          Login.submit({
+            login: email,
+            password: password,
+          });
+        });
+      });
+    </script>
   </body>
 </html>
