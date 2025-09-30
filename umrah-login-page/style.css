@@ -1,0 +1,265 @@
+body {
+  font-family: sans-serif !important;
+  font-weight: 600 !important;
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  font-family: Urbanist !important;
+}
+
+.back-color-EDF7FF {
+  background-color: #ede9f2 !important;
+}
+.back-color-light {
+  background: white !important;
+}
+
+.color-secondary {
+  color: #0a0e16 !important;
+}
+.color-primary {
+  background: #8c7042 !important;
+}
+.color-white {
+  color: white !important;
+}
+.bton {
+  border-radius: 1234px;
+  background: #8c7042;
+  display: flex;
+  height: 48px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.p-relative {
+  position: relative;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 123px;
+  border: 1px solid rgba(104, 104, 104, 0.1);
+  background: #fbfbfb;
+  display: flex;
+  min-height: 48px;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  font-size: 14px;
+  color: #686868;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: none;
+  outline: none;
+}
+
+/* /////////////////////////////////fonts//////////////////////////////////////////// */
+
+@font-face {
+  font-family: "Nunito";
+  src: url("https://ahmedgamalemam.github.io/b2c-login-page/fonts/NunitoSans_7pt_Condensed-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("https://ahmedgamalemam.github.io/b2c-login-page/fonts/Urbanist-Black.ttf")
+    format("truetype");
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+p {
+  margin: 0 !important;
+}
+
+.main-login {
+  height: 100vh;
+  padding: 0rem 9% 0;
+  background-color: #fff !important;
+}
+
+section:has(form) {
+  width: 80%;
+  border-radius: 16px;
+  border: 1px solid rgba(104, 104, 104, 0.2);
+  background: #fff;
+  padding: 2rem 1.5rem;
+}
+
+section:has(form) > div {
+  h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    color: #686868;
+    font-size: 1vw;
+    font-weight: 400;
+  }
+}
+
+.inp {
+  padding: 12px 16px;
+  align-items: center;
+  font-size: 14px;
+  color: #686868;
+}
+
+.entry-item {
+  position: relative;
+}
+
+#forgotPassword {
+  position: absolute;
+  right: 0;
+  top: 71%;
+  color: #8c7042 !important;
+  text-decoration: none !important;
+  font-size: 12px;
+}
+
+.unified_container .row .panel-default #api .localAccount .rememberMe {
+  font-size: 12px;
+}
+.unified_container
+  .row
+  .panel-default
+  #api
+  .localAccount
+  .create
+  #createAccount {
+  color: #8c7042 !important;
+}
+.unified_container .row .panel-default #api .social {
+  display: none;
+}
+.create {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.buttons #cancel {
+  display: none;
+}
+#attributeList ul li .attrEntry .verificationControlContent .sendCode,
+#attributeList ul li .attrEntry .verify .sendButton[id$="ver_but_send"] {
+  width: 100% !important;
+  min-height: 50px;
+  height: auto;
+  background-color: #8c7042 !important;
+  color: #fff;
+  padding-bottom: 0px !important;
+  border-radius: 123px !important;
+}
+.buttons button:hover {
+  background-color: #735e37 !important;
+  border-color: #8c7042 !important;
+}
+.buttons button {
+  background-color: #8c7042 !important;
+}
+#continue {
+  width: 100% !important;
+  border-radius: 123px !important;
+  margin-top: 0px !important;
+}
+.error.itemLevel {
+  position: absolute;
+  right: 0;
+  top: -36%;
+}
+.error.itemLevel > p {
+  color: #eb001b !important;
+}
+
+.rememberMe {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+
+div:has(#next) {
+  margin-block-start: 1rem;
+}
+
+#next {
+  width: 100%;
+  color: white;
+}
+
+/* /////////////////////////////////////////////////////// */
+
+.background-container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.error {
+  p {
+    color: rgb(211, 3, 3);
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-login > div {
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 0 !important;
+  }
+
+  .main-login > section {
+    width: 100% !important;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 97%;
+  }
+
+  section:has(form) > img {
+    width: 100% !important;
+  }
+  section:has(form) > div {
+    h3 {
+      font-size: 1.5rem !important;
+    }
+
+    p {
+      font-size: 0.8rem !important;
+    }
+  }
+
+  .bg.bg1 {
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-login {
+    padding: 0rem 3% 0;
+  }
+
+  .main-login > div {
+    display: none !important;
+  }
+
+  .main-login > section {
+    width: 100% !important;
+  }
+}
